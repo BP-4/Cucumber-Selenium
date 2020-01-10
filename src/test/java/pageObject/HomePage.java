@@ -2,6 +2,7 @@ package pageObject;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 
@@ -16,6 +17,14 @@ public class HomePage extends BasePage {
 
     String titleLoUltimo = ("Lo último");
 
+    String titleInternacional = ("Internacional");
+
+    String titleQueLook = ("Que look");
+
+    String titileVideos = ("Ciudad TV");
+
+    String titlePortfolio = ("Portfolio");
+
     By buttonLiveLocator = By.xpath("//header[@id='header-site']//a[@class='live-button']");
 
     By pageTitleLocator = By.xpath("//h1[@class='brick-title']");
@@ -24,12 +33,21 @@ public class HomePage extends BasePage {
 
     By buttonInternacionalLocator = By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/secciones/internacional']");
 
+    By buttonQueLookLocator = By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/secciones/que-look']");
+
+    By buttonVideosLocator = By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/ciudad-tv']");
+
+    By buttonPortfolioLocator = By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/galerias/portfolio']");
+
+    By linkMediakitLocator = By.xpath("//footer[@id='footer']//a[@href='http://artear.com.ar/es/comercial/digital/formato/todos']");
+
+    By linkPoliticaDeUsoLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']");
+
 
 
     public void clickbuttonLiveLocator() throws Exception {
 
         this.click(buttonLiveLocator);
-
     }
 
     public void clickbuttonLoUltimoLocator() throws Exception {
@@ -43,6 +61,35 @@ public class HomePage extends BasePage {
 
     }
 
+    public  void clickQueLookLocator() throws Exception {
+
+        this.click(buttonQueLookLocator);
+
+    }
+
+    public  void clickVideosLocator() throws Exception {
+
+        this.click(buttonVideosLocator);
+
+    }
+
+    public  void clickPortfolioLocator() throws Exception {
+
+        this.click(buttonPortfolioLocator);
+
+    }
+
+    public  void clicklinkMediakitLocator() throws Exception {
+
+        this.click(linkMediakitLocator);
+
+    }
+
+    public  void clicklinkPoliticaDeUsoLocator() throws Exception {
+
+        this.click(linkPoliticaDeUsoLocator);
+
+    }
 
 
     public String getTitleHomePage()
@@ -59,9 +106,32 @@ public class HomePage extends BasePage {
         return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titleVivo);
     }
 
+    public Boolean isTitleInternacional() throws Exception {
+        return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titleInternacional);
+    }
+
     public Boolean isTitleLoUltimo() throws Exception {
         return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titleLoUltimo);
     }
+
+    public Boolean isTitleQueLook() throws Exception {
+        return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titleQueLook);
+    }
+
+    public Boolean isTitleVideos() throws Exception {
+        return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titileVideos);
+    }
+
+    public Boolean isTitlePortfolio() throws Exception {
+        return this.isDisplayed(pageTitleLocator) && this.getText(pageTitleLocator).equals(titlePortfolio);
+    }
+
+    public void scrollDown() throws InterruptedException {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+        Thread.sleep(3000);
+    }
+
 
     public void titileLocator () throws Exception{
         this.getTitleLocator(pageTitleLocator);

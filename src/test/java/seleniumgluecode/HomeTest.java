@@ -46,71 +46,63 @@ public class HomeTest extends TestBase{
 
     @When("^Hace click en el boton Internacional$")
     public void hace_click_en_el_boton_Internacional() throws Throwable {
-
         homePage.clickInternacionalLocator();
     }
 
     @Then("^Se debe redirigir a la seccion Internacional$")
     public void se_debe_redirigir_a_la_seccion_Internacional() throws Throwable {
-        WebElement pageTitleLocatorInternacional = driver.findElement(By.xpath("//h1[@class='brick-title']"));
-        Assert.assertTrue("No se encuentra en la seccion Internacional", pageTitleLocatorInternacional.isDisplayed());
-        Assert.assertEquals("Internacional", pageTitleLocatorInternacional.getText());
+        homePage.titileLocator();
+        Assert.assertTrue("No se encuentra en la seccion Internacional",homePage.isTitleInternacional());
+
     }
 
     @When("^Hace click en el boton Qué Look$")
     public void hace_click_en_el_boton_Qué_Look() throws Throwable {
-        WebElement buttonQueLookLocator = driver.findElement(By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/secciones/que-look']"));
-        buttonQueLookLocator.click();
+        homePage.clickQueLookLocator();
     }
 
     @Then("^Se debe redirigir a la seccion Qué Look$")
     public void se_debe_redirigir_a_la_seccion_Qué_Look() throws Throwable {
-        WebElement pageTitleLocatorQueLook = driver.findElement(By.xpath("//h1[@class='brick-title']"));
-        Assert.assertTrue("No se encuentra en la seccion Internacional", pageTitleLocatorQueLook.isDisplayed());
-        Assert.assertEquals("Que look", pageTitleLocatorQueLook.getText());
+        homePage.titileLocator();
+        Assert.assertTrue("No se encuentra en la seccion Que Look", homePage.isTitleQueLook());
+
     }
 
     @When("^Hace click en el boton Videos$")
     public void hace_click_en_el_boton_Videos() throws Throwable {
-        WebElement buttonVideosLocator = driver.findElement(By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/ciudad-tv']"));
-        buttonVideosLocator.click();
+        homePage.clickVideosLocator();
 
     }
 
     @Then("^Se debe redirigir a la seccion Videos$")
     public void se_debe_redirigir_a_la_seccion_Videos() throws Throwable {
-        WebElement pageTitleLocatorVideos = driver.findElement(By.xpath("//h1[@class='brick-title']"));
-        Assert.assertTrue("No se encuentra en la seccion Videos", pageTitleLocatorVideos.isDisplayed());
-        Assert.assertEquals("Ciudad TV", pageTitleLocatorVideos.getText());
+        homePage.titileLocator();
+        Assert.assertTrue("No se encuentra en la seccion Videos", homePage.isTitleVideos());
+
 
     }
 
     @When("^Hace click en el boton Portfolio$")
     public void hace_click_en_el_boton_Portfolio() throws Throwable {
-        WebElement buttonPortfolioLocator = driver.findElement(By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/galerias/portfolio']"));
-        buttonPortfolioLocator.click();
+        homePage.clickPortfolioLocator();
     }
 
     @Then("^Se debe redirigir a la seccion Portfolio$")
     public void se_debe_redirigir_a_la_seccion_Portfolio() throws Throwable {
-        WebElement pageTitleLocatorPortfolio = driver.findElement(By.xpath("//h1[@class='brick-title']"));
-        Assert.assertTrue("No se encuentra en la seccion Portfolio", pageTitleLocatorPortfolio.isDisplayed());
-        Assert.assertEquals("Portfolio", pageTitleLocatorPortfolio.getText());
+        homePage.titileLocator();
+        Assert.assertTrue("No se encuentra en la seccion Portfolio", homePage.isTitlePortfolio());
 
     }
 
     @When("^Hace click en el link Mediakit Comercial$")
     public void hace_click_en_el_link_Mediakit_Comercial() throws Throwable {
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
-        Thread.sleep(3000);
-        WebElement linkMediakitLocator = driver.findElement(By.xpath("//footer[@id='footer']//a[@href='http://artear.com.ar/es/comercial/digital/formato/todos']"));
-        linkMediakitLocator.click();
+        homePage.scrollDown();
+        homePage.clicklinkMediakitLocator();
     }
 
     @Then("^Se debe redirigir a la pagina Mediakit Comercial$")
     public void se_debe_redirigir_a_la_pagina_Mediakit_Comercial() throws Throwable {
-       Assert.assertTrue(driver.getTitle().contains("Artear"));
+       Assert.assertTrue(homePage.getTitle().contains("Artear"));
     }
 
     @When("^Hace click en el link Politica de Uso$")
@@ -118,8 +110,7 @@ public class HomeTest extends TestBase{
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
         Thread.sleep(3000);
-        WebElement linkPoliticaDeUsoLocator = driver.findElement(By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']"));
-        linkPoliticaDeUsoLocator.click();
+        homePage.clicklinkPoliticaDeUsoLocator();
     }
 
     @Then("^Se debe redirigir a la pagina Politica de Uso$")

@@ -6,6 +6,7 @@ package seleniumgluecode;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,8 +25,6 @@ public class Hooks {
         driver = new ChromeDriver();
         driver.get("https://www-stg.ciudad.com.ar/");
         driver.manage().window().maximize();
-
-
 
         WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//footer[@id='footer']")));

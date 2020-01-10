@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     public  BasePage(WebDriver driver){
         this.driver = driver;
@@ -44,7 +44,7 @@ public class BasePage {
 
         } catch (Exception e) {
 
-            throw new Exception("No se pudo obtener el titulo del driver");
+            throw new Exception("No se pudo encontrar el localizador");
         }
 
     }
