@@ -43,6 +43,10 @@ public class HomePage extends BasePage {
 
     By linkPoliticaDeUsoLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']");
 
+    By linkPoliticaDeConfidencialidadLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-confidencialidad-ciudad']");
+
+
+
 
 
     public void clickbuttonLiveLocator() throws Exception {
@@ -88,6 +92,12 @@ public class HomePage extends BasePage {
     public  void clicklinkPoliticaDeUsoLocator() throws Exception {
 
         this.click(linkPoliticaDeUsoLocator);
+
+    }
+
+    public  void clicklinkPoliticaDeConfidencialidadLocator() throws Exception {
+
+        this.click(linkPoliticaDeConfidencialidadLocator);
 
     }
 

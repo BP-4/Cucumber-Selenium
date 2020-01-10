@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c025f7f2-e393-41fb-94ce-0a5cb6dd82d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Cucumber_Selenium.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" afterDir="false" />
@@ -140,25 +135,25 @@
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
     <state x="-1020" y="-312" key="FileChooserDialogImpl/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577986482469" />
-    <state width="1557" height="345" key="GridCell.Tab.0.bottom" timestamp="1578678088005">
+    <state width="1557" height="345" key="GridCell.Tab.0.bottom" timestamp="1578687024857">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="345" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578678088005" />
+    <state width="1557" height="345" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578687024857" />
     <state width="1323" height="281" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578604306644" />
-    <state width="1557" height="345" key="GridCell.Tab.0.center" timestamp="1578678088005">
+    <state width="1557" height="345" key="GridCell.Tab.0.center" timestamp="1578687024857">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="345" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578678088005" />
+    <state width="1557" height="345" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578687024857" />
     <state width="1323" height="281" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578604306643" />
-    <state width="1557" height="345" key="GridCell.Tab.0.left" timestamp="1578678088004">
+    <state width="1557" height="345" key="GridCell.Tab.0.left" timestamp="1578687024857">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="345" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578678088004" />
+    <state width="1557" height="345" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578687024857" />
     <state width="1323" height="281" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578604306643" />
-    <state width="1557" height="345" key="GridCell.Tab.0.right" timestamp="1578678088005">
+    <state width="1557" height="345" key="GridCell.Tab.0.right" timestamp="1578687024857">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="345" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578678088005" />
+    <state width="1557" height="345" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578687024857" />
     <state width="1323" height="281" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578604306644" />
     <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog" timestamp="1577992455742">
       <screen x="-1600" y="-498" width="1600" height="860" />
