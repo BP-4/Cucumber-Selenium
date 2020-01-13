@@ -45,6 +45,12 @@ public class HomePage extends BasePage {
 
     By linkPoliticaDeConfidencialidadLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-confidencialidad-ciudad']");
 
+    By linkCucinareLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://www.ciudad.com.ar/cocina']");
+
+    By linkTNLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']");
+
+    By linkEldoceTvLocator = By.xpath("linkEldoceTvLocator");
+
 
 
 
@@ -95,9 +101,27 @@ public class HomePage extends BasePage {
 
     }
 
+    public  void clicklinklinkCucinareLocator() throws Exception {
+
+        this.click(linkCucinareLocator);
+
+    }
+
     public  void clicklinkPoliticaDeConfidencialidadLocator() throws Exception {
 
         this.click(linkPoliticaDeConfidencialidadLocator);
+
+    }
+
+    public  void clicklinkTNLocator() throws Exception {
+
+        this.click(linkTNLocator);
+
+    }
+
+    public  void cliclinkEldoceTvLocator() throws Exception {
+
+        this.click(linkEldoceTvLocator);
 
     }
 

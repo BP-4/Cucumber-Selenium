@@ -25,15 +25,15 @@ public class Hooks {
         driver = new ChromeDriver();
         driver.get("https://www-stg.ciudad.com.ar/");
         driver.manage().window().maximize();
-        By elemento = By.xpath("//div[@class='ad-better-close ad-better-close-top']");
-        if(elemento.equals(true))
+        By banner = By.xpath("//div[@class='ad-better-close ad-better-close-top']");
+        if(driver.findElement(banner).isDisplayed())
         {
             WebElement cerrarBanner = driver.findElement(By.xpath("//div[@class='ad-better-close ad-better-close-top']"));
             cerrarBanner.click();
 
         }else
         {
-            System.out.println("No se better-ads");
+            System.out.println("No hay better-ads");
         }
 
         WebDriverWait wait = new WebDriverWait(driver,10);

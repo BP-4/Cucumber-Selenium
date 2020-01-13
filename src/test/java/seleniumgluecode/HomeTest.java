@@ -121,8 +121,7 @@ public class HomeTest extends TestBase{
     @When("^Hace click en el link Cucinare$")
     public void hace_click_en_el_link_Cucinare() throws Throwable {
         homePage.scrollDown();
-        WebElement linkCucinareLocator = driver.findElement(By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://www.ciudad.com.ar/cocina']"));
-        linkCucinareLocator.click();
+        homePage.clicklinklinkCucinareLocator();
     }
 
     @Then("^Se debe redirigir a la pagina de Cucinare$")
@@ -134,8 +133,7 @@ public class HomeTest extends TestBase{
     @When("^Hace click en el link TN$")
     public void hace_click_en_el_link_TN() throws Throwable {
         homePage.scrollDown();
-        WebElement linkTNLocator = driver.findElement(By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']"));
-        linkTNLocator.click();
+        homePage.clicklinkTNLocator();
     }
 
     @Then("^Se debe redirigir a la pagina de TN$")
@@ -147,8 +145,7 @@ public class HomeTest extends TestBase{
     @When("^Hace click en el link EldoceTv$")
     public void hace_Click_En_El_Link_EldoceTv() throws Throwable {
         homePage.scrollDown();
-        WebElement linkEldoceTvLocator = driver.findElement(By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://eldoce.tv/']"));
-        linkEldoceTvLocator.click();
+        homePage.cliclinkEldoceTvLocator();
     }
 
     @Then("^Se debe redirigir a la pagina de EldoceTv$")
