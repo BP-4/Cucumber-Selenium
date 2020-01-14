@@ -25,8 +25,8 @@ public class Hooks {
         driver = new ChromeDriver();
         driver.get("https://www-stg.ciudad.com.ar/");
         driver.manage().window().maximize();
-        By banner = By.xpath("//div[@class='ad-better-close ad-better-close-top']");
-        if(driver.findElement(banner).isDisplayed())
+        By banner = By.xpath("//*[@class='ad-better-close ad-better-close-top']");
+        if(driver.findElements(banner).size()!=0 )
         {
             WebElement cerrarBanner = driver.findElement(By.xpath("//div[@class='ad-better-close ad-better-close-top']"));
             cerrarBanner.click();

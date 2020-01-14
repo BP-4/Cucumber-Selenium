@@ -74,6 +74,19 @@ public class BasePage {
 
     }
 
+    public  void  close () throws Exception {
+        try {
+
+             driver.close();
+
+        }catch (Exception e){
+
+            throw new Exception("No se pudo cerrar la ventana");
+        }
+
+
+    }
+
 
 
 

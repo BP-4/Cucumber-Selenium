@@ -4,6 +4,9 @@ package pageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.Set;
 
 
 public class HomePage extends BasePage {
@@ -49,7 +52,17 @@ public class HomePage extends BasePage {
 
     By linkTNLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']");
 
-    By linkEldoceTvLocator = By.xpath("linkEldoceTvLocator");
+    By linkEldoceTvLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://eldoce.tv/']");
+
+    By locatorFirstNota = By.xpath("//article[contains(@class,'news-widget')][1]//a");
+
+    By locatorHeaderFB = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'facebook')]");
+
+    By locatorHeaderTW = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'twitter')]");
+
+    By locatorHeaderYT = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'youtube')]");
+
+    By locatorHeaderInsta = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'instagram')]");
 
 
 
@@ -119,11 +132,57 @@ public class HomePage extends BasePage {
 
     }
 
-    public  void cliclinkEldoceTvLocator() throws Exception {
+    public  void clicklinkEldoceTvLocator() throws Exception {
 
         this.click(linkEldoceTvLocator);
 
     }
+
+    public  void clicklocatorFirstNota() throws Exception {
+
+        this.click(locatorFirstNota);
+
+    }
+
+    public  void clicklocatorHeaderFB() throws Exception {
+
+        this.click(locatorHeaderFB);
+
+    }
+
+    public  void clicklocatorHeaderTW() throws Exception {
+
+        this.click(locatorHeaderTW);
+
+    }
+
+    public  void clicklocatorHeaderInsta() throws Exception {
+
+        this.click(locatorHeaderInsta);
+
+    }
+
+    public  void clicklocatorHeaderYT() throws Exception {
+
+        this.click(locatorHeaderYT);
+
+    }
+
+    public  void closeBanner() throws Exception {
+
+        By banner = By.xpath("//*[@class='ad-better-close ad-better-close-top']");
+        if(driver.findElements(banner).size()!=0 )
+        {
+            WebElement cerrarBanner = driver.findElement(By.xpath("//div[@class='ad-better-close ad-better-close-top']"));
+            cerrarBanner.click();
+
+        }else
+        {
+            System.out.println("No hay better-ads");
+        }
+    }
+
+
 
 
     public String getTitleHomePage()
@@ -166,6 +225,17 @@ public class HomePage extends BasePage {
         Thread.sleep(3000);
     }
 
+    public void closeWindow() throws InterruptedException {
+
+        String winHandleBefore = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
+        driver.close();
+        driver.switchTo().window(winHandleBefore);
+
+    }
+
 
     public void titileLocator () throws Exception{
         this.getTitleLocator(pageTitleLocator);
@@ -176,4 +246,6 @@ public class HomePage extends BasePage {
     }
 
     }
+
+
 
