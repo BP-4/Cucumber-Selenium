@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c025f7f2-e393-41fb-94ce-0a5cb6dd82d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/estructuraNota.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apk/adblockpluschrome.crx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/portada.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/NotaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/NotaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/estructuraNota.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/estructuraNota.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/TestBase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,10 +112,14 @@
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
     <state x="-1203" y="-412" key="#Testrunner/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578423594510" />
-    <state x="-1070" y="-312" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1578933975135">
+    <state x="-1070" y="-312" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579196195039">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state x="-1070" y="-312" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578933975135" />
+    <state x="-1070" y="-312" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579196195039" />
+    <state x="-1508" y="-406" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579109541291">
+      <screen x="-1600" y="-498" width="1600" height="860" />
+    </state>
+    <state x="-1508" y="-406" width="1416" height="676" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579109541291" />
     <state x="-1051" y="-264" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577379044645">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
@@ -137,36 +148,36 @@
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
     <state x="-1020" y="-312" key="FileChooserDialogImpl/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577986482469" />
-    <state width="1557" height="363" key="GridCell.Tab.0.bottom" timestamp="1579007739063">
+    <state width="1557" height="329" key="GridCell.Tab.0.bottom" timestamp="1579288613730">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579007739063" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578949113942" />
-    <state width="1557" height="363" key="GridCell.Tab.0.center" timestamp="1579007739062">
+    <state width="1557" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579288613730" />
+    <state width="1323" height="278" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579208790336" />
+    <state width="1557" height="329" key="GridCell.Tab.0.center" timestamp="1579288613729">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="363" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579007739062" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578949113942" />
-    <state width="1557" height="363" key="GridCell.Tab.0.left" timestamp="1579007739062">
+    <state width="1557" height="329" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579288613729" />
+    <state width="1323" height="278" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
+    <state width="1557" height="329" key="GridCell.Tab.0.left" timestamp="1579288613729">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="363" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579007739062" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578949113942" />
-    <state width="1557" height="363" key="GridCell.Tab.0.right" timestamp="1579007739062">
+    <state width="1557" height="329" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579288613729" />
+    <state width="1323" height="278" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
+    <state width="1557" height="329" key="GridCell.Tab.0.right" timestamp="1579288613730">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="363" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579007739062" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578949113942" />
+    <state width="1557" height="329" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579288613730" />
+    <state width="1323" height="278" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
     <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog" timestamp="1577992455742">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
     <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577992455742" />
-    <state x="-1093" y="-217" key="com.intellij.ide.util.TipDialog" timestamp="1579001724180">
-      <screen x="-1600" y="-498" width="1600" height="860" />
+    <state x="433" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579293782951">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1093" y="-217" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579001724180" />
-    <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@0.0.1366.728" timestamp="1578915556367" />
-    <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577481964712" />
+    <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579174518908" />
+    <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@0.0.1366.728" timestamp="1579262610866" />
+    <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579293782951" />
     <state x="-1070" y="-312" key="extract.method.dialog" timestamp="1578342108889">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>

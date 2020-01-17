@@ -79,113 +79,57 @@ public class HomeTest extends TestBase{
 
     }
 
-    @When("^Hace click en el link Mediakit Comercial$")
-    public void hace_click_en_el_link_Mediakit_Comercial() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinkMediakitLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Mediakit Comercial$")
-    public void se_debe_redirigir_a_la_pagina_Mediakit_Comercial() throws Throwable {
-       Assert.assertTrue(homePage.getTitle().contains("Artear"));
-    }
-
-    @When("^Hace click en el link Politica de Uso$")
-    public void hace_click_en_el_link_Politica_de_Uso() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinkPoliticaDeUsoLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Politica de Uso$")
-    public void se_debe_redirigir_a_la_pagina_Politica_de_Uso() throws Throwable {
-        Assert.assertTrue(homePage.getTitle().contains("Política de uso aceptable - Ciudad Magazine"));
-    }
-
-    @When("^Hace click en el link Politica de Confidencialidad$")
-    public void hace_click_en_el_link_Politica_de_Confidencialidad() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinkPoliticaDeConfidencialidadLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Politica de Confidencialidad$")
-    public void se_debe_redirigir_a_la_pagina_Politica_de_Confidencialidad() throws Throwable {
-        Assert.assertTrue(homePage.getTitle().contains("Política de Privacidad - Ciudad Magazine"));
-    }
-
-    @When("^Hace click en el link Cucinare$")
-    public void hace_click_en_el_link_Cucinare() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinklinkCucinareLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de Cucinare$")
-    public void se_debe_redirigir_a_la_pagina_de_Cucinare() throws Throwable {
-        Assert.assertTrue(homePage.getTitle().contains("Cucinare - Ciudad Magazine"));
+    @When("^Busco la seccion Que Look en la portada$")
+    public void busco_la_seccion_Que_Look_en_la_portada() throws Throwable {
 
     }
 
-    @When("^Hace click en el link TN$")
-    public void hace_click_en_el_link_TN() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinkTNLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de TN$")
-    public void se_debe_redirigir_a_la_pagina_de_TN() throws Throwable {
-        Assert.assertTrue(homePage.getTitle().contains("TN.com.ar - Últimas noticias de Argentina y el mundo en vivo"));
-    }
-
-
-    @When("^Hace click en el link EldoceTv$")
-    public void hace_Click_En_El_Link_EldoceTv() throws Throwable {
-        homePage.scrollDown();
-        homePage.clicklinkEldoceTvLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de EldoceTv$")
-    public void se_Debe_Redirigir_A_La_Pagina_De_EldoceTv() throws Throwable {
-        Assert.assertTrue(homePage.getTitle().contains("ElDoce.tv: Noticias y entretenimiento de Córdoba y Argentina"));
-    }
-
-    @When("^Ingresa a la primera nota$")
-    public void ingresa_a_la_primera_nota() throws Throwable {
-        homePage.clicklocatorFirstNota();
-    }
-
-    @When("^Ingresa a FaceBook$")
-    public void ingresa_a_FaceBook() throws Throwable {
-        homePage.closeBanner();
-        homePage.clicklocatorHeaderFB();
-        homePage.closeWindow();
+    @Then("^Valido la seccion Que Look$")
+    public void valido_la_seccion_Que_Look() throws Throwable {
 
     }
 
-    @When("^Ingresa a Instagram$")
-    public void ingresa_a_Instagram() throws Throwable {
-        homePage.closeBanner();
-        homePage.clicklocatorHeaderInsta();
-        homePage.closeWindow();
+    @When("^Busco la seccion Portfolio en la portada$")
+    public void busco_la_seccion_Portfolio_en_la_portada() throws Throwable {
+        homePage.searchLocatorPortfolioPortada();
     }
 
-    @When("^Ingresa a YouTube$")
-    public void ingresa_a_YouTube() throws Throwable {
-        homePage.closeBanner();
-        homePage.clicklocatorHeaderYT();
-        homePage.closeWindow();
+    @Then("^Valido la seccion Portfolio$")
+    public void valido_la_seccion_Portfolio() throws Throwable {
+        homePage.getStructureLocatorPortfolioPortada();
+    }
+
+    @When("^Busco la seccion Te cuento algo en la portada$")
+    public void busco_la_seccion_Te_cuento_algo_en_la_portada() throws Throwable {
 
     }
 
-    @When("^Ingresa a Twitter$")
-    public void ingresa_a_Twitter() throws Throwable {
-        homePage.closeBanner();
-        homePage.clicklocatorHeaderTW();
-        homePage.closeWindow();
-    }
-
-    @Then("^Se debe comprobar la estructura de la nota$")
-    public void se_debe_comprobar_la_estructura_de_la_nota() throws Throwable {
+    @Then("^Valido la seccion Te cuento algo$")
+    public void valido_la_seccion_Te_cuento_algo() throws Throwable {
 
     }
+
+    @When("^Busco la seccion Lo mejor de ciudad magazineTV en la portada$")
+    public void busco_la_Lo_mejor_de_ciudad_magazineTV_en_la_portada() throws Throwable {
+
+    }
+
+    @Then("^Valido la seccion Lo mejor de ciudad magazineTV$")
+    public void valido_la_seccion_Lo_mejor_de_ciudad_magazineTV() throws Throwable {
+
+    }
+
+    @When("^Busco la seccion Newsletter en la portada$")
+    public void busco_la_seccion_Newsletter_en_la_portada() throws Throwable {
+
+    }
+
+    @Then("^Valido la seccion de Newsletter$")
+    public void valido_la_Newsletter() throws Throwable {
+
+    }
+
+
 
 
 }

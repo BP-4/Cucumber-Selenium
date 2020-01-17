@@ -24,6 +24,23 @@ public class BasePage {
 
     }
 
+
+
+    public void findElement (By element) throws Exception
+    {
+        try {
+
+            driver.findElement(element);
+
+        } catch (Exception e) {
+
+            throw new Exception("No se pudo encontrar el elemento: " + element);
+        }
+
+
+
+    }
+
     public  String  getText (By element) throws Exception {
         try {
 
@@ -83,6 +100,21 @@ public class BasePage {
 
             throw new Exception("No se pudo cerrar la ventana");
         }
+
+
+    }
+
+    public void findElemens (By element) throws Exception
+    {
+        try {
+
+            driver.findElements(element);
+
+        } catch (Exception e) {
+
+            throw new Exception("No se pudo encontrar el elemento: " + element);
+        }
+
 
 
     }

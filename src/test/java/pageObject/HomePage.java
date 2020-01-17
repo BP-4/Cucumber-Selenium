@@ -6,7 +6,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.Set;
 
 
 public class HomePage extends BasePage {
@@ -42,27 +41,47 @@ public class HomePage extends BasePage {
 
     By buttonPortfolioLocator = By.xpath("//header[@id='header-site']//nav[@class='header-links']//a[@href='/galerias/portfolio']");
 
-    By linkMediakitLocator = By.xpath("//footer[@id='footer']//a[@href='http://artear.com.ar/es/comercial/digital/formato/todos']");
+                                    /* SECCION PORTFOLIO */
+    By locatorPortfolioPortada = By.xpath("//section[@class='block block-portfolio ']");
 
-    By linkPoliticaDeUsoLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']");
+    By locatorVerMasPortfolio = By.xpath("//section[@class='block block-portfolio ']//a[@title='Ver más']");
 
-    By linkPoliticaDeConfidencialidadLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-confidencialidad-ciudad']");
+    By locatorArticlePortfolio = By.xpath("//section[@class='block block-portfolio ']//h2[@class='news-widget-title']");
 
-    By linkCucinareLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://www.ciudad.com.ar/cocina']");
+    By locatorImagenPortfolio = By.xpath("//section[@class='block block-portfolio ']//div[@class='news-widget-image']");
 
-    By linkTNLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']");
+    String textPortfolio = ("Portfolio");
 
-    By linkEldoceTvLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://eldoce.tv/']");
+                                     /* SECCION QUE LOOK */
+    By locatorQueLookPortada = By.xpath("//section[@class='block block-que-look ']");
 
-    By locatorFirstNota = By.xpath("//article[contains(@class,'news-widget')][1]//a");
+    By locatorVerMasQueLook = By.xpath("//section[@class='block block-que-look ']//a[@title='Ver más']");
 
-    By locatorHeaderFB = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'facebook')]");
+    By locatorArticleQuelook = By.xpath("//section[@class='block block-que-look ']//h2[@class='news-widget-title block-content-wrapper']");
 
-    By locatorHeaderTW = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'twitter')]");
+    By locatorImagenQueLook = By.xpath("//section[@class='block block-que-look ']//div[@class='news-widget-image col-12_xs-6']");
 
-    By locatorHeaderYT = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'youtube')]");
+                                     /* SECCION MAGAZINETV */
+    By locatorMagazineTVPortada = By.xpath("//section[@class='block block-cuento-algo ']//a[@title='Lo Mejor de Ciudad Magazine TV']");
 
-    By locatorHeaderInsta = By.xpath("//div[@class='header-top']//div[@class='social-icons']/a[contains(@href,'instagram')]");
+    By locatorVerMasMagazineTV = By.xpath("");
+
+    By locatorArticleMagazineTV = By.xpath("");
+
+    By locatorImagenMagazineTV = By.xpath("");
+
+                                    /* SECCION TE CUENTO ALGO */
+    By locatorTeCuentoAlgoPortada = By.xpath("//section[@class='block block-cuento-algo ']//a[@title='Te cuento algo']");
+
+    By locatorVerMasTeCuentoAlgo = By.xpath("");
+
+    By locatorArticleTeCuentoAlgo = By.xpath("");
+
+    By locatorImagenTeCuentoAlgo= By.xpath("");
+
+                                     /* SECCION NEWSLETTER */
+    By locatorNewsLetterPortada = By.xpath("//div[@id='block-newsletter-home']//iframe[@class='lzl iframe-newsletter-home loaded']");
+
 
 
 
@@ -102,71 +121,20 @@ public class HomePage extends BasePage {
 
     }
 
-    public  void clicklinkMediakitLocator() throws Exception {
+    public  void getStructureLocatorPortfolioPortada() throws  Exception{
 
-        this.click(linkMediakitLocator);
-
+        this.getText(locatorPortfolioPortada).equals(textPortfolio);
+        this.findElement(locatorVerMasPortfolio);
+        this.findElement(locatorArticlePortfolio);
+        this.findElement(locatorImagenPortfolio);
     }
 
-    public  void clicklinkPoliticaDeUsoLocator() throws Exception {
+    public void searchLocatorPortfolioPortada() throws Exception{
 
-        this.click(linkPoliticaDeUsoLocator);
-
+        this.findElement(locatorPortfolioPortada);
     }
 
-    public  void clicklinklinkCucinareLocator() throws Exception {
 
-        this.click(linkCucinareLocator);
-
-    }
-
-    public  void clicklinkPoliticaDeConfidencialidadLocator() throws Exception {
-
-        this.click(linkPoliticaDeConfidencialidadLocator);
-
-    }
-
-    public  void clicklinkTNLocator() throws Exception {
-
-        this.click(linkTNLocator);
-
-    }
-
-    public  void clicklinkEldoceTvLocator() throws Exception {
-
-        this.click(linkEldoceTvLocator);
-
-    }
-
-    public  void clicklocatorFirstNota() throws Exception {
-
-        this.click(locatorFirstNota);
-
-    }
-
-    public  void clicklocatorHeaderFB() throws Exception {
-
-        this.click(locatorHeaderFB);
-
-    }
-
-    public  void clicklocatorHeaderTW() throws Exception {
-
-        this.click(locatorHeaderTW);
-
-    }
-
-    public  void clicklocatorHeaderInsta() throws Exception {
-
-        this.click(locatorHeaderInsta);
-
-    }
-
-    public  void clicklocatorHeaderYT() throws Exception {
-
-        this.click(locatorHeaderYT);
-
-    }
 
     public  void closeBanner() throws Exception {
 
@@ -182,13 +150,6 @@ public class HomePage extends BasePage {
         }
     }
 
-
-
-
-    public String getTitleHomePage()
-    {
-        return titleHomePage;
-    }
 
     public Boolean homePageIsDisplayed () throws Exception{
 
@@ -225,7 +186,7 @@ public class HomePage extends BasePage {
         Thread.sleep(3000);
     }
 
-    public void closeWindow() throws InterruptedException {
+    public void closeWindow() {
 
         String winHandleBefore = driver.getWindowHandle();
         for (String winHandle : driver.getWindowHandles()) {

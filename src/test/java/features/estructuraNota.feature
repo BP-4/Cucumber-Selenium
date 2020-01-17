@@ -9,3 +9,9 @@ Feature: Estructura Nota
     And   Ingresa a YouTube
     And   Ingresa a Twitter
     Then  Se debe comprobar la estructura de la nota
+
+  Scenario: Verificar el carroucel de notas top
+    Given El usuario se encuentra en la pagina home de ciudad
+    When  Ingresa a la primera nota
+    And   Cuento las notas Top
+    Then  Verificamos la cantidad de notas top

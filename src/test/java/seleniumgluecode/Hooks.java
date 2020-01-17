@@ -8,8 +8,10 @@ import cucumber.api.java.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class Hooks {
 
@@ -18,14 +20,15 @@ public class Hooks {
 
 
     @Before
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         numberOfCase ++;
         System.out.println("Se esta ejecutando el caso numero:" + numberOfCase);
         System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www-stg.ciudad.com.ar/");
         driver.manage().window().maximize();
-        By banner = By.xpath("//*[@class='ad-better-close ad-better-close-top']");
+
+        By banner = By.xpath("//div[@class='ad-better-close ad-better-close-top']");
         if(driver.findElements(banner).size()!=0 )
         {
             WebElement cerrarBanner = driver.findElement(By.xpath("//div[@class='ad-better-close ad-better-close-top']"));
