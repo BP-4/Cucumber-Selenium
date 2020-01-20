@@ -10,7 +10,7 @@ Feature: Secciones en la Portada
 
   Scenario: Verificar la seccion Portfolio en la portada
     Given   El usuario se encuentra en la pagina home de ciudad
-    When    Busco la  seccion Portfolio en la portada
+    When    Busco la seccion Portfolio en la portada
     Then    Valido la seccion Portfolio
 
   Scenario: Verificar la seccion Te cuento algo en la portada

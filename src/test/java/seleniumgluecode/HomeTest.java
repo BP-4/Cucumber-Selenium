@@ -79,14 +79,65 @@ public class HomeTest extends TestBase{
 
     }
 
+    @When("^Hace click en el link Mediakit Comercial$")
+    public void hace_click_en_el_link_Mediakit_Comercial() throws Throwable {
+        homePage.scrollDown();
+        homePage.clicklinkMediakitLocator();
+        homePage.backWindow();
+
+    }
+
+
+    @When("^Hace click en el link Politica de Uso$")
+    public void hace_click_en_el_link_Politica_de_Uso() throws Throwable {
+        homePage.clicklinkPoliticaDeUsoLocator();
+        homePage.backWindow();
+    }
+
+
+    @When("^Hace click en el link Politica de Confidencialidad$")
+    public void hace_click_en_el_link_Politica_de_Confidencialidad() throws Throwable {
+        homePage.clicklinkPoliticaDeConfidencialidadLocator();
+        homePage.backWindow();
+    }
+
+
+    @When("^Hace click en el link Cucinare$")
+    public void hace_click_en_el_link_Cucinare() throws Throwable {
+        homePage.clicklinklinkCucinareLocator();
+        homePage.backWindow();
+    }
+
+
+    @When("^Hace click en el link TN$")
+    public void hace_click_en_el_link_TN() throws Throwable {
+        homePage.clicklinkTNLocator();
+        homePage.backWindow();
+    }
+
+
+
+    @When("^Hace click en el link EldoceTv$")
+    public void hace_Click_En_El_Link_EldoceTv() throws Throwable {
+        homePage.clicklinkEldoceTvLocator();
+        homePage.backWindow();
+    }
+
+    @Then("^Se notifica que se encontraron todos los link Institucionales$")
+    public void se_notifica_que_se_encontraron_todos_los_link_Institucionales() throws Throwable {
+        System.out.println("Se Encontraron todos los Link Intitucionales");
+    }
+
+
+
     @When("^Busco la seccion Que Look en la portada$")
     public void busco_la_seccion_Que_Look_en_la_portada() throws Throwable {
-
+        homePage.searchlocatorQueLookPortada();
     }
 
     @Then("^Valido la seccion Que Look$")
     public void valido_la_seccion_Que_Look() throws Throwable {
-
+        homePage.getStructurelocatorQueLookPortada();
     }
 
     @When("^Busco la seccion Portfolio en la portada$")

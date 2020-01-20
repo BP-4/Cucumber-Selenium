@@ -1,6 +1,7 @@
 package pageObject;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,19 @@ public class HomePage extends BasePage {
     String titileVideos = ("Ciudad TV");
 
     String titlePortfolio = ("Portfolio");
+
+    By linkMediakitLocator = By.xpath("//footer[@id='footer']//a[@href='http://artear.com.ar/es/comercial/digital/formato/todos']");
+
+    By linkPoliticaDeUsoLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']");
+
+    By linkPoliticaDeConfidencialidadLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-confidencialidad-ciudad']");
+
+    By linkCucinareLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://www.ciudad.com.ar/cocina']");
+
+    By linkTNLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']");
+
+    By linkEldoceTvLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://eldoce.tv/']");
+
 
     By buttonLiveLocator = By.xpath("//header[@id='header-site']//a[@class='live-button']");
 
@@ -61,6 +75,8 @@ public class HomePage extends BasePage {
 
     By locatorImagenQueLook = By.xpath("//section[@class='block block-que-look ']//div[@class='news-widget-image col-12_xs-6']");
 
+    String textQueLook = ("Que look");
+
                                      /* SECCION MAGAZINETV */
     By locatorMagazineTVPortada = By.xpath("//section[@class='block block-cuento-algo ']//a[@title='Lo Mejor de Ciudad Magazine TV']");
 
@@ -85,7 +101,7 @@ public class HomePage extends BasePage {
 
 
 
-
+                                                      /*Header*/
 
     public void clickbuttonLiveLocator() throws Exception {
 
@@ -121,6 +137,53 @@ public class HomePage extends BasePage {
 
     }
 
+                                                    /*Footer*/
+
+    public void backWindow () throws Exception {
+        Thread.sleep(2000);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.history.go(-1)");
+
+    }
+
+    public  void clicklinkMediakitLocator() throws Exception {
+        this.click(linkMediakitLocator);
+        Assert.assertTrue(driver.getTitle().contains("Artear"));
+
+    }
+
+    public  void clicklinkPoliticaDeUsoLocator() throws Exception {
+        this.click(linkPoliticaDeUsoLocator);
+        Assert.assertTrue(driver.getTitle().contains("Política de uso aceptable - Ciudad Magazine"));
+
+    }
+
+    public  void clicklinklinkCucinareLocator() throws Exception {
+        this.click(linkCucinareLocator);
+        Assert.assertTrue(driver.getTitle().contains("Cucinare - Ciudad Magazine"));
+
+    }
+
+    public  void clicklinkPoliticaDeConfidencialidadLocator() throws Exception {
+        this.click(linkPoliticaDeConfidencialidadLocator);
+        Assert.assertTrue(driver.getTitle().contains("Política de Privacidad - Ciudad Magazine"));
+
+    }
+
+    public  void clicklinkTNLocator() throws Exception {
+        this.click(linkTNLocator);
+        Assert.assertTrue(driver.getTitle().contains("TN.com.ar - Últimas noticias de Argentina y el mundo en vivo"));
+
+    }
+
+    public  void clicklinkEldoceTvLocator() throws Exception {
+        this.click(linkEldoceTvLocator);
+        Assert.assertTrue(driver.getTitle().contains("ElDoce.tv: Noticias y entretenimiento de Córdoba y Argentina"));
+
+    }
+
+                                                /*Secciones en Portada*/
+
     public  void getStructureLocatorPortfolioPortada() throws  Exception{
 
         this.getText(locatorPortfolioPortada).equals(textPortfolio);
@@ -130,11 +193,20 @@ public class HomePage extends BasePage {
     }
 
     public void searchLocatorPortfolioPortada() throws Exception{
-
         this.findElement(locatorPortfolioPortada);
     }
 
+    public  void  getStructurelocatorQueLookPortada() throws  Exception{
 
+        this.getText(locatorQueLookPortada).equals(textQueLook);
+        this.findElement(locatorVerMasQueLook);
+        this.findElement(locatorArticleQuelook);
+        this.findElement(locatorImagenQueLook);
+    }
+
+    public void searchlocatorQueLookPortada() throws  Exception{
+        this.findElement(locatorQueLookPortada);
+    }
 
     public  void closeBanner() throws Exception {
 

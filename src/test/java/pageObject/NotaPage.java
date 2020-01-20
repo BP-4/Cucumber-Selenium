@@ -30,17 +30,6 @@ public class NotaPage extends BasePage {
 
     By carrouselCountTitleTop = By.xpath("//section[@class='brick brick-notasTop wrapper']/div[@class='carrousel-wrapper']//article[contains(@id,'carrousel-404-item')]/h1[@class='news-widget-title']/a");
 
-    By linkMediakitLocator = By.xpath("//footer[@id='footer']//a[@href='http://artear.com.ar/es/comercial/digital/formato/todos']");
-
-    By linkPoliticaDeUsoLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-uso-aceptable']");
-
-    By linkPoliticaDeConfidencialidadLocator = By.xpath("//footer[@id='footer']//a[@href='/politica-de-confidencialidad-ciudad']");
-
-    By linkCucinareLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://www.ciudad.com.ar/cocina']");
-
-    By linkTNLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://tn.com.ar']");
-
-    By linkEldoceTvLocator = By.xpath("//div[@class='footer-menu']//a[@class='footer-menu-link'][@href='https://eldoce.tv/']");
 
 
     public  void clicklocatorFirstNota() throws Exception {
@@ -90,41 +79,6 @@ public class NotaPage extends BasePage {
         return totalNotasTopSize;
     }
 
-    public  void clicklinkMediakitLocator() throws Exception {
-
-        this.click(linkMediakitLocator);
-
-    }
-
-    public  void clicklinkPoliticaDeUsoLocator() throws Exception {
-
-        this.click(linkPoliticaDeUsoLocator);
-
-    }
-
-    public  void clicklinklinkCucinareLocator() throws Exception {
-
-        this.click(linkCucinareLocator);
-
-    }
-
-    public  void clicklinkPoliticaDeConfidencialidadLocator() throws Exception {
-
-        this.click(linkPoliticaDeConfidencialidadLocator);
-
-    }
-
-    public  void clicklinkTNLocator() throws Exception {
-
-        this.click(linkTNLocator);
-
-    }
-
-    public  void clicklinkEldoceTvLocator() throws Exception {
-
-        this.click(linkEldoceTvLocator);
-
-    }
 
 
     public void closeWindow() {

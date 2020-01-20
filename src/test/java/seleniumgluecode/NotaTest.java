@@ -11,76 +11,10 @@ public class NotaTest extends TestBase {
 
 
 
-    @When("^Hace click en el link Mediakit Comercial$")
-    public void hace_click_en_el_link_Mediakit_Comercial() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinkMediakitLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Mediakit Comercial$")
-    public void se_debe_redirigir_a_la_pagina_Mediakit_Comercial() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("Artear"));
-    }
-
-    @When("^Hace click en el link Politica de Uso$")
-    public void hace_click_en_el_link_Politica_de_Uso() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinkPoliticaDeUsoLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Politica de Uso$")
-    public void se_debe_redirigir_a_la_pagina_Politica_de_Uso() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("Política de uso aceptable - Ciudad Magazine"));
-    }
-
-    @When("^Hace click en el link Politica de Confidencialidad$")
-    public void hace_click_en_el_link_Politica_de_Confidencialidad() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinkPoliticaDeConfidencialidadLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina Politica de Confidencialidad$")
-    public void se_debe_redirigir_a_la_pagina_Politica_de_Confidencialidad() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("Política de Privacidad - Ciudad Magazine"));
-    }
-
-    @When("^Hace click en el link Cucinare$")
-    public void hace_click_en_el_link_Cucinare() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinklinkCucinareLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de Cucinare$")
-    public void se_debe_redirigir_a_la_pagina_de_Cucinare() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("Cucinare - Ciudad Magazine"));
-
-    }
-
-    @When("^Hace click en el link TN$")
-    public void hace_click_en_el_link_TN() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinkTNLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de TN$")
-    public void se_debe_redirigir_a_la_pagina_de_TN() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("TN.com.ar - Últimas noticias de Argentina y el mundo en vivo"));
-    }
-
-
-    @When("^Hace click en el link EldoceTv$")
-    public void hace_Click_En_El_Link_EldoceTv() throws Throwable {
-        notaPage.scrollDown();
-        notaPage.clicklinkEldoceTvLocator();
-    }
-
-    @Then("^Se debe redirigir a la pagina de EldoceTv$")
-    public void se_Debe_Redirigir_A_La_Pagina_De_EldoceTv() throws Throwable {
-        Assert.assertTrue(notaPage.getTitle().contains("ElDoce.tv: Noticias y entretenimiento de Córdoba y Argentina"));
-    }
 
     @When("^Ingresa a la primera nota$")
     public void ingresa_a_la_primera_nota() throws Throwable {
+        Thread.sleep(100);
         notaPage.clicklocatorFirstNota();
     }
 
