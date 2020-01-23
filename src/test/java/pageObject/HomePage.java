@@ -80,12 +80,13 @@ public class HomePage extends BasePage {
                                      /* SECCION MAGAZINETV */
     By locatorMagazineTVPortada = By.xpath("//section[@class='block block-cuento-algo ']//a[@title='Lo Mejor de Ciudad Magazine TV']");
 
-    By locatorVerMasMagazineTV = By.xpath("");
+    By locatorVerMasMagazineTV = By.xpath("//section[@class='block block-cuento-algo ']//a[@href='/tags/ciudad-magazine'][@title='Ver más']");
 
     By locatorArticleMagazineTV = By.xpath("");
 
     By locatorImagenMagazineTV = By.xpath("");
 
+    String textMagazineTV = ("Lo mejor de CiudadMagazineTV");
                                     /* SECCION TE CUENTO ALGO */
     By locatorTeCuentoAlgoPortada = By.xpath("//section[@class='block block-cuento-algo ']//a[@title='Te cuento algo']");
 
@@ -96,7 +97,17 @@ public class HomePage extends BasePage {
     By locatorImagenTeCuentoAlgo= By.xpath("");
 
                                      /* SECCION NEWSLETTER */
-    By locatorNewsLetterPortada = By.xpath("//div[@id='block-newsletter-home']//iframe[@class='lzl iframe-newsletter-home loaded']");
+    By iframeNewsLetterPortada = By.xpath("//div[@id='block-newsletter-home']//iframe[@class='lzl iframe-newsletter-home loaded']");
+
+    By inputNewsLetterPortada = By.xpath("//form[@method='GET']/div[@class='subscribe-inputs']/input[@class='email']");
+
+    By suscribirmeButtonNewsLetter = By.xpath("//form[@method='GET']/div[@class='subscribe-inputs']/input[@type='submit']");
+
+    By locatortextNewsLetter = By.xpath("//div[@class='subscribe-text']");
+
+    String textNewsLetter = ("¡Gracias por suscribirte!");
+
+    String mailNewsLetter = ("ecadario@artear.com");
 
 
 
@@ -204,9 +215,37 @@ public class HomePage extends BasePage {
         this.findElement(locatorImagenQueLook);
     }
 
+
     public void searchlocatorQueLookPortada() throws  Exception{
         this.findElement(locatorQueLookPortada);
     }
+
+    public void  getStructurelocatorMagazineTVPortada() throws Exception{
+        this.getText(locatorMagazineTVPortada).equals(textMagazineTV);
+        this.findElement(locatorVerMasMagazineTV);
+    }
+
+    public void searchlocatorNewsLetterPortada() throws  Exception{
+        this.findElement(iframeNewsLetterPortada);
+        WebElement iframe = driver.findElement(iframeNewsLetterPortada);
+        driver.switchTo().frame(iframe);
+        this.sendMail();
+        Thread.sleep(3000);
+        this.isLocatortextNewsLetter();
+        driver.switchTo().defaultContent();
+    }
+
+    public  void sendMail () throws  Exception{
+        this.sendKeys(mailNewsLetter, inputNewsLetterPortada);
+        this.click(suscribirmeButtonNewsLetter);
+    }
+
+    public Boolean isLocatortextNewsLetter() throws Exception {
+        this.getText(locatortextNewsLetter).equals(textNewsLetter);
+        return true;
+    }
+
+
 
     public  void closeBanner() throws Exception {
 

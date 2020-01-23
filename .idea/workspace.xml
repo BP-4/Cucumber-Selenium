@@ -3,21 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="c025f7f2-e393-41fb-94ce-0a5cb6dd82d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/footer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/footer.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/portada.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/portada.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/NotaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/NotaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/HomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/NotaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/NotaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/seleniumgluecode/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seleniumgluecode/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/NotaPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/NotaPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/NotaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/seleniumgluecode/NotaTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Cucumber-Selenium" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,13 +44,40 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/features" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Cucumber-Selenium\src\test\java\features" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Cucumber-Selenium\src\test\java\features" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.Testrunner (1)">
+    <configuration name="Feature: portada" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/portada.feature" />
+      <option name="GLUE" value="seleniumgluecode" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Cucumber-Selenium" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: portada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Testrunner (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Cucumber-Selenium" />
       <extension name="coverage">
@@ -76,6 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber java.Feature: portada" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -102,6 +140,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="-1203" y="-412" key="#Testrunner" timestamp="1578423594510">
       <screen x="-1600" y="-498" width="1600" height="860" />
@@ -123,10 +174,10 @@
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
     <state x="-995" y="-351" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577984204841" />
-    <state x="-1120" y="-339" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577450234507">
+    <state x="-1120" y="-339" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579704172202">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state x="-1120" y="-339" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577450234507" />
+    <state x="-1120" y="-339" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579704172202" />
     <state x="-1046" y="-498" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578069373656">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
@@ -144,30 +195,54 @@
     </state>
     <state x="-1020" y="-312" key="FileChooserDialogImpl/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577986482469" />
     <state x="495" y="157" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579297103339" />
-    <state width="1557" height="303" key="GridCell.Tab.0.bottom" timestamp="1579545756358">
+    <state width="1557" height="238" key="GridCell.Tab.0.bottom" timestamp="1579728484649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1557" height="238" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1579712417191">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579545756358" />
-    <state width="1323" height="278" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579208790336" />
-    <state width="1557" height="303" key="GridCell.Tab.0.center" timestamp="1579545756357">
+    <state width="1557" height="238" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579712417191" />
+    <state width="1557" height="238" key="GridCell.Tab.0.bottom/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579721641519" />
+    <state width="1557" height="238" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579728484649" />
+    <state width="1557" height="238" key="GridCell.Tab.0.center" timestamp="1579728484649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1557" height="238" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1579712417190">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579545756357" />
-    <state width="1323" height="278" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
-    <state width="1557" height="303" key="GridCell.Tab.0.left" timestamp="1579545756357">
+    <state width="1557" height="238" key="GridCell.Tab.0.center.inPresentationMode/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579712417190" />
+    <state width="1557" height="238" key="GridCell.Tab.0.center/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579721641519" />
+    <state width="1557" height="238" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579728484649" />
+    <state width="1557" height="238" key="GridCell.Tab.0.left" timestamp="1579728484649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1557" height="238" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1579712417190">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579545756357" />
-    <state width="1323" height="278" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
-    <state width="1557" height="303" key="GridCell.Tab.0.right" timestamp="1579545756357">
+    <state width="1557" height="238" key="GridCell.Tab.0.left.inPresentationMode/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579712417190" />
+    <state width="1557" height="238" key="GridCell.Tab.0.left/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579721641519" />
+    <state width="1557" height="238" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579728484649" />
+    <state width="1557" height="238" key="GridCell.Tab.0.right" timestamp="1579728484649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1557" height="238" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1579712417191">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579545756357" />
-    <state width="1323" height="278" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579208790335" />
-    <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog" timestamp="1577992455742">
+    <state width="1557" height="238" key="GridCell.Tab.0.right.inPresentationMode/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579712417191" />
+    <state width="1557" height="238" key="GridCell.Tab.0.right/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579721641519" />
+    <state width="1557" height="238" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579728484649" />
+    <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog" timestamp="1579548734737">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577992455742" />
+    <state x="-1224" y="-376" key="Maven.ArtifactSearchDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579548734737" />
+    <state x="-1299" y="-425" key="SettingsEditor" timestamp="1579712986678">
+      <screen x="-1600" y="-498" width="1600" height="860" />
+    </state>
+    <state x="-1299" y="-425" key="SettingsEditor/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579712986678" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1579634374693">
+      <screen x="-1600" y="-498" width="1600" height="860" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579634374693" />
     <state x="-1508" y="-406" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579522761614">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
@@ -178,10 +253,10 @@
     <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579174518908" />
     <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1600.-498.1600.860@0.0.1366.728" timestamp="1579262610866" />
     <state x="433" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579293782951" />
-    <state x="-1070" y="-312" key="extract.method.dialog" timestamp="1578342108889">
+    <state x="-1070" y="-312" key="extract.method.dialog" timestamp="1579634911592">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state x="-1070" y="-312" key="extract.method.dialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1578342108889" />
+    <state x="-1070" y="-312" key="extract.method.dialog/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579634911592" />
     <state x="-1104" y="-470" width="607" height="804" key="find.popup" timestamp="1579003072752">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
@@ -190,9 +265,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1579297106296" />
-    <state x="-1137" y="-318" width="672" height="678" key="search.everywhere.popup" timestamp="1577364678424">
+    <state x="-1137" y="-318" width="672" height="678" key="search.everywhere.popup" timestamp="1579634294324">
       <screen x="-1600" y="-498" width="1600" height="860" />
     </state>
-    <state x="-1137" y="-318" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1577364678424" />
+    <state x="-1137" y="-318" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1600.-498.1600.860@-1600.-498.1600.860" timestamp="1579634294324" />
   </component>
 </project>

@@ -26,4 +26,5 @@ Feature: Secciones en la Portada
   Scenario: Verificar la seccion Newsletter en la portada
     Given   El usuario se encuentra en la pagina home de ciudad
     When    Busco la seccion Newsletter en la portada
-    Then    Valido la seccion de Newsletter
+    And     Ingreso un correo valido
+    Then    Me regristro exitosamente

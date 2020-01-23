@@ -14,7 +14,7 @@ public class NotaTest extends TestBase {
 
     @When("^Ingresa a la primera nota$")
     public void ingresa_a_la_primera_nota() throws Throwable {
-        Thread.sleep(100);
+        Thread.sleep(1000);
         notaPage.clicklocatorFirstNota();
     }
 

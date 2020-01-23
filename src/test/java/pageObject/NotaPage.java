@@ -79,8 +79,6 @@ public class NotaPage extends BasePage {
         return totalNotasTopSize;
     }
 
-
-
     public void closeWindow() {
 
         String winHandleBefore = driver.getWindowHandle();

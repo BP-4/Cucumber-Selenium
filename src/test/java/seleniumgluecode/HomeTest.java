@@ -8,7 +8,6 @@ import org.junit.Assert;
 
 
 
-
 public class HomeTest extends TestBase{
 
 
@@ -172,11 +171,17 @@ public class HomeTest extends TestBase{
 
     @When("^Busco la seccion Newsletter en la portada$")
     public void busco_la_seccion_Newsletter_en_la_portada() throws Throwable {
+        homePage.scrollDown();
+        homePage.searchlocatorNewsLetterPortada();
+    }
+
+    @When("^Ingreso un correo valido$")
+    public void ingreso_un_correo_valido() throws Throwable {
 
     }
 
-    @Then("^Valido la seccion de Newsletter$")
-    public void valido_la_Newsletter() throws Throwable {
+    @Then("^Me regristro exitosamente$")
+    public void me_regristro_exitosamente() throws Throwable {
 
     }
 

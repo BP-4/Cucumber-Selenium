@@ -24,6 +24,19 @@ public class BasePage {
 
     }
 
+    public void sendKeys (String inputText, By element) throws Exception
+    {
+        try {
+
+            driver.findElement(element).sendKeys(inputText);
+
+        } catch (Exception e) {
+
+            throw new Exception("No se pudo escribir : " + element);
+        }
+
+    }
+
 
 
     public void findElement (By element) throws Exception
