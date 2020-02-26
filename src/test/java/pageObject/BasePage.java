@@ -2,6 +2,7 @@ package pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class BasePage {
 
@@ -32,10 +33,25 @@ public class BasePage {
 
         } catch (Exception e) {
 
-            throw new Exception("No se pudo escribir : " + element);
+            throw new Exception("No se pudo escribir en : " + element);
         }
 
     }
+
+    public void sendKeys (By element) throws Exception
+    {
+        try {
+
+            driver.findElement(element).sendKeys();
+
+        } catch (Exception e) {
+
+            throw new Exception("No se pudo escribir en : " + element);
+        }
+
+    }
+
+
 
 
 
@@ -51,8 +67,9 @@ public class BasePage {
         }
 
 
-
     }
+
+
 
     public  String  getText (By element) throws Exception {
         try {
@@ -66,18 +83,20 @@ public class BasePage {
 
     }
 
-    public  void  getTitleLocator (By element) throws Exception
-    {
+    public  String  getText (WebElement element) throws Exception {
         try {
 
-            driver.findElement(element).findElement(element);
+            return element.getText();
 
-        } catch (Exception e) {
+        }catch (Exception e){
 
-            throw new Exception("No se pudo encontrar el localizador");
+            throw new Exception("No se pudo obtener el texto del elemento: " + element);
         }
 
     }
+
+
+
 
     public Boolean isDisplayed (By element) throws Exception {
         try {

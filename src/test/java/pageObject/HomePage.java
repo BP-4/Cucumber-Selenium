@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
 
 
 public class HomePage extends BasePage {
@@ -112,6 +114,8 @@ public class HomePage extends BasePage {
 
 
 
+
+
                                                       /*Header*/
 
     public void clickbuttonLiveLocator() throws Exception {
@@ -196,7 +200,6 @@ public class HomePage extends BasePage {
                                                 /*Secciones en Portada*/
 
     public  void getStructureLocatorPortfolioPortada() throws  Exception{
-
         this.getText(locatorPortfolioPortada).equals(textPortfolio);
         this.findElement(locatorVerMasPortfolio);
         this.findElement(locatorArticlePortfolio);
@@ -208,7 +211,6 @@ public class HomePage extends BasePage {
     }
 
     public  void  getStructurelocatorQueLookPortada() throws  Exception{
-
         this.getText(locatorQueLookPortada).equals(textQueLook);
         this.findElement(locatorVerMasQueLook);
         this.findElement(locatorArticleQuelook);
@@ -240,12 +242,9 @@ public class HomePage extends BasePage {
         this.click(suscribirmeButtonNewsLetter);
     }
 
-    public Boolean isLocatortextNewsLetter() throws Exception {
+    public void isLocatortextNewsLetter() throws Exception {
         this.getText(locatortextNewsLetter).equals(textNewsLetter);
-        return true;
     }
-
-
 
     public  void closeBanner() throws Exception {
 
@@ -298,26 +297,37 @@ public class HomePage extends BasePage {
     }
 
     public void closeWindow() {
-
         String winHandleBefore = driver.getWindowHandle();
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
         driver.close();
         driver.switchTo().window(winHandleBefore);
-
     }
 
-
-    public void titileLocator () throws Exception{
-        this.getTitleLocator(pageTitleLocator);
+    public  void conectionHome () throws Exception{
+        driver = new ChromeDriver();
+        driver.get("https://www-stg.ciudad.com.ar/");
+        driver.manage().window().maximize();
+        this.closeBanner();
     }
 
-    public HomePage (WebDriver driver){
-        super(driver);
+    public void countTag() throws Exception {
+        List<WebElement> elements = driver.findElements(By.tagName("section"));
+        System.out.println("Número de elementos:" + elements.size());
+        for (WebElement element:elements) {
+            System.out.println(element.getAttribute("class").substring(0,4));
+        }
     }
 
+    public void searchText() throws Exception{
+        boolean isTheTextPresent = driver.getPageSource().contains("===window.location.protocol?");
+        Assert.assertTrue(isTheTextPresent);
     }
+
+    public HomePage (WebDriver driver)
+    { super(driver); }
+ }
 
 
 

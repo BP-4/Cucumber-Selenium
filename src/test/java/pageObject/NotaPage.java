@@ -99,7 +99,6 @@ public class NotaPage extends BasePage {
 
     public  void closeBanner() throws Exception {
 
-
         By banner = By.xpath("//div[@class='ad-better-close ad-better-close-top']");
         if(driver.findElements(banner).size()!=0 )
         {

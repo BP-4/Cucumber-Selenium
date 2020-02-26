@@ -14,6 +14,7 @@ public class HomeTest extends TestBase{
 
     @Given("^El usuario se encuentra en la pagina home de ciudad$")
     public void el_usuario_se_encuentra_en_la_pagina_home_de_ciudad() throws Throwable {
+        homePage.conectionHome();
         Assert.assertTrue(homePage.homePageIsDisplayed());
     }
 
@@ -83,7 +84,6 @@ public class HomeTest extends TestBase{
         homePage.scrollDown();
         homePage.clicklinkMediakitLocator();
         homePage.backWindow();
-
     }
 
 
@@ -185,6 +185,16 @@ public class HomeTest extends TestBase{
 
     }
 
+    @When("^Cuanto las etiquetas img$")
+    public void cuanto_las_etiquetas_img() throws Throwable {
+        homePage.countTag();
+        homePage.searchText();
+    }
+
+    @Then("^Consigo la cantidad de etiquetas que se encuentran en la home$")
+    public void consigo_la_cantidad_de_etiquetas_que_se_encuentran_en_la_home() throws Throwable {
+
+    }
 
 
 
